@@ -1,38 +1,72 @@
 .App {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  background-color: #DC5F00;
+  height: 86.2vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* width: 100%; */
+  max-width: 400px;
+  padding: 1rem;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 2rem;
+  height: 20rem;
 }
 
-.App-link {
-  color: #61dafb;
+.setAlarm {
+  display: flex;
+  justify-content: center;
+}
+.dropdown{
+  border: 2px solid grey;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  width: 4rem;
+}
+select{
+  border: none;
+  background-color:transparent;
+  color: grey;
+  outline: none;
+  font-size: 13px;
+}
+select,option{
+  width: 4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.disable{
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.button{
+  width: 100%;
+  display: flex;
+}
+button{
+  margin-left: 1rem;
+  width: 20rem;
+  height: 3rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #CF0A0A;
+  color: #fff;
+  margin-right: 1rem;
+  cursor: pointer;;
+}
+button:hover{
+  opacity: 0.8;
+}
+
+h1{
+  font-size: 3.5rem;
+  font-weight: 500;
 }
